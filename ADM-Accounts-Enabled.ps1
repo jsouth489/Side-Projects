@@ -1,0 +1,1 @@
+﻿Get-ADUser -filter {(name -like "adm*") -and (enabled -eq $true)} | export-Csv -Path C:\Users\US20419\Desktop\ADMUserEnabled.csv

@@ -1,0 +1,68 @@
+[General]
+EnableLogging=4
+LogMethod=1
+RunApp=C:\Windows\System32\wscript.exe invisible.vbs run.bat
+TargetURL=
+Private Browsing=1
+MaximizeIE=1
+IEPageTitle=
+CertificateWarning=0
+UseWinBasicAuth=0
+IELoadWaitTimeout=6500
+
+[TaskSequence1]
+SequenceDelay=0
+AppWindowTitle=Cisco ASDM-IDM
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys=%custom1%{TAB}%username%{TAB}
+SendKeysDelay=5
+SendKeysRaw=0
+Waiting for SequenceDelay (0)
+Switched window handle: Cisco ASDM-IDM
+[Function] insert_custom_strings (*MASKED*)
+[Custom string] username
+
+SendKeys sent (send)
+END
+
+[TaskSequence2] 
+BEGIN
+[Function] execute_task_sequence_app (TaskSequence2)
+SequenceDelay=0
+AppWindowTitle=Cisco ASDM-IDM
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys=%password%
+SendKeysDelay=5
+SendKeysRaw=1
+Waiting for SequenceDelay (0)
+Switched window handle: Cisco ASDM-IDM
+[Function] insert_custom_strings (*MASKED*)
+[Custom string] password
+SendKeys sent (send)
+END
+
+[TaskSequence3] 
+BEGIN
+[Function] execute_task_sequence_app (TaskSequence3)
+SequenceDelay=0
+AppWindowTitle=Cisco ASDM-IDM
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys={ENTER}
+SendKeysDelay=5
+SendKeysRaw=0
+Waiting for SequenceDelay (0)
+Switched window handle: Cisco ASDM-IDM
+[Function] insert_custom_strings (*MASKED*)
+SendKeys sent (send)
+END
+
+All sections processed.
+[Function] quit_script
+
+

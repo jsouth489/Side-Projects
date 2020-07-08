@@ -1,0 +1,41 @@
+[General]
+EnableLogging=4
+LogMethod=1
+RunApp= C:\Program Files (x86)\Google\Chrome\Application\chrome
+TargetURL=
+Private Browsing=1
+Maximize=1
+PageTitle=
+CertificateWarning=1
+UseWinBasicAuth=0
+IELoadWaitTimeout=6500
+
+[TaskSequence1] 
+BEGIN
+SequenceDelay=0
+AppWindowTitle=F5
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys=%username%{TAB}
+SendKeysDelay=5
+SendKeysRaw=1
+Waiting for SequenceDelay (0)
+Switched window handle:
+END
+
+[TaskSequence2] 
+BEGIN
+SequenceDelay=0
+AppWindowTitle=
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys=%password%{ENTER}
+SendKeysDelay=5
+SendKeysRaw=1
+Waiting for SequenceDelay (0)
+Switched window handle: 
+END
+
+

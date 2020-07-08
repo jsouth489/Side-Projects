@@ -1,0 +1,1 @@
+﻿(&(&(&(objectCategory=Person)(|(sAMAccountName=adm-*)(sAMAccountName=ADM-*))))) 

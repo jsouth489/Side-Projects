@@ -1,0 +1,123 @@
+[General]
+EnableLogging=4
+LogMethod=1
+RunApp=
+TargetURL=
+Private Browsing=1
+MaximizeIE=1
+IEPageTitle=
+CertificateWarning=1
+UseWinBasicAuth=0
+IELoadWaitTimeout=6500
+
+[TaskSequence1]
+SequenceDelay=0
+AppWindowTitle=NetCloud
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys={TAB}
+SendKeysDelay=5
+SendKeysRaw=0
+Waiting for SequenceDelay (0)
+Switched window handle: 
+
+END
+
+[TaskSequence2]
+SequenceDelay=0
+AppWindowTitle=NetCloud
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys={TAB}
+SendKeysDelay=5
+SendKeysRaw=0
+Waiting for SequenceDelay (0)
+Switched window handle: 
+
+
+[TaskSequence3]
+SequenceDelay=0
+AppWindowTitle=NetCloud
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys={TAB}
+SendKeysDelay=5
+SendKeysRaw=0
+Waiting for SequenceDelay (0)
+Switched window handle: 
+
+
+[TaskSequence4]
+SequenceDelay=0
+AppWindowTitle=NetCloud
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys={TAB}
+SendKeysDelay=5
+SendKeysRaw=0
+Waiting for SequenceDelay (0)
+Switched window handle: 
+
+
+[TaskSequence5]
+SequenceDelay=0
+AppWindowTitle=NetCloud
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys={TAB}
+SendKeysDelay=5
+SendKeysRaw=0
+Waiting for SequenceDelay (0)
+Switched window handle: 
+
+[TaskSequence6] 
+BEGIN
+SequenceDelay=0
+AppWindowTitle=NetCloud
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys=%username%
+SendKeysDelay=5
+SendKeysRaw=1
+Waiting for SequenceDelay (0)
+Switched window handle:
+END
+
+
+[TaskSequence7] 
+BEGIN
+SequenceDelay=0
+AppWindowTitle=NetCloud
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys=%password%
+SendKeysDelay=5
+SendKeysRaw=1
+Waiting for SequenceDelay (0)
+Switched window handle: 
+END
+
+[TaskSequence3] 
+BEGIN
+SequenceDelay=0
+AppWindowTitle=NetCloud
+WindowTitleMatchMode=-1
+AppWindowControlID=
+AppWindowControlClick=
+SendKeys={ENTER}
+SendKeysDelay=5
+SendKeysRaw=0
+Waiting for SequenceDelay (0)
+END
+
+All sections processed.
+[Function] quit_script
+
+
